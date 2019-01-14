@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--验证码输入框-->
+    <declare-styleable name="VerificationCodeInputView">
+        <attr name="box" format="integer"/>
+        <attr name="child_layout" format="integer"/>
+        <attr name="child_horizontal_padding" format="dimension"/>
+        <attr name="child_vertical_padding" format="dimension"/>
+        <attr name="child_width" format="dimension"/>
+        <attr name="child_height" format="dimension"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="box_bg_focus" format="reference|color"/>
+        <attr name="box_bg_normal" format="reference|color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="float"/>
+        <attr name="input_type" format="string"/>
+        <attr name="underline_focus_color" format="color"/>
+        <attr name="underline_normal_color" format="color"/>
+        <attr name="cursor" format="reference"/>
+        <attr name="underline_height" format="integer|dimension"/>
+        <attr name="underline_space" format="integer|dimension"/>
+    </declare-styleable>
+</resources>

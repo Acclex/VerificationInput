@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:verification="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.acclex.verificationinput.VerificationCodeInputView
+        android:id="@+id/input_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.acclex.verificationinput.VerificationCodeInputView
+        android:id="@+id/input_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_1"
+        verification:box="6"
+        verification:child_height="50dp"
+        verification:child_horizontal_padding="8dp"
+        verification:child_width="35dp"
+        verification:cursor="@drawable/shape_verification_cursor"
+        verification:input_type="number"
+        verification:text_color="@color/color_47555f"
+        verification:text_size="25"
+        verification:underline_focus_color="@color/color_47555f"
+        verification:underline_height="4dp"
+        verification:underline_normal_color="@color/color_b5bec4"
+        verification:underline_space="3dp" />
+
+    <com.acclex.verificationinput.VerificationCodeInputView
+        android:id="@+id/input_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_2"
+        verification:box="8"
+        verification:child_height="60dp"
+        verification:child_horizontal_padding="4dp"
+        verification:child_width="40dp"
+        verification:cursor="@color/colorPrimaryDark"
+        verification:input_type="number"
+        verification:text_color="@color/color_0a94ff"
+        verification:text_size="15"
+        verification:underline_focus_color="@color/color_0a94ff"
+        verification:underline_height="1dp"
+        verification:underline_normal_color="@color/colorPrimaryDark"
+        verification:underline_space="10dp" />
+
+    <com.acclex.verificationinput.VerificationCodeInputView
+        android:id="@+id/input_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_3"
+        verification:box="6"
+        verification:box_bg_focus="@drawable/shape_focus_bg"
+        verification:box_bg_normal="@drawable/shape_normal_bg"
+        verification:child_height="50dp"
+        verification:child_horizontal_padding="4dp"
+        verification:child_width="35dp"
+        verification:cursor="@color/colorPrimaryDark"
+        verification:input_type="number"
+        verification:text_color="@color/color_0a94ff"
+        verification:text_size="20" />
+
+</android.support.constraint.ConstraintLayout>
