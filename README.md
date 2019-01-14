@@ -1,7 +1,7 @@
 # VerificationInput
 [![](https://jitpack.io/v/Acclex/VerificationInput.svg)](https://jitpack.io/#Acclex/VerificationInput)
-# 支持数量，背景，光标等自定义的验证码输入框
-# How to use
+## 支持数量，背景，光标等自定义的验证码输入框
+### How to use
     <com.acclex.verificationinput.VerificationCodeInputView
         android:id="@+id/input_1"
         android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
         
 如果使用box_bg_focus和box_bg_normal设置背景，那么通过underline_focus_color和underline_normal_color设置的绘制下划线的属性将会失效,具体可看Demo内xml配置
 
-# Gradle dependencies
+## Gradle dependencies
 
 	allprojects {
 		repositories {
