@@ -32,14 +32,13 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
         }
         input_1.setPasteListener { data, box ->
-            val c = data.getItemAt(0).coerceToText(this)
+            var c = data.getItemAt(0).coerceToText(this)
             if (c.length > box) {
-                c.subSequence(0, box)
+                c = c.subSequence(0, box)
             }
             Toast.makeText(this, c, Toast.LENGTH_SHORT).show()
             log(javaClass.toString(), c.toString())
         }
     }
-
     private fun log(TAG: String, msg: String) = Log.d(TAG, msg)
 }

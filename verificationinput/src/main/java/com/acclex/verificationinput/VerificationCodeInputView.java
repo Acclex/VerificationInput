@@ -141,8 +141,6 @@ public class VerificationCodeInputView extends ViewGroup {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (keyCode == KeyEvent.KEYCODE_DEL) {
                     backFocus();
-                } else if (keyCode >= KeyEvent.KEYCODE_0 && keyCode <= KeyEvent.KEYCODE_9) {
-                    toNext(keyCode);
                 }
                 return false;
             }
@@ -252,6 +250,7 @@ public class VerificationCodeInputView extends ViewGroup {
      * 退格删除再输入的情况下，如果当前选中的EditText是已经有文本了，那么直接跳到下一个EditText并填充文本
      *
      * @param keyCode 来自键盘输入的keyCode
+     * @deprecated
      */
     private void toNext(int keyCode) {
         EditText editText;
@@ -279,10 +278,10 @@ public class VerificationCodeInputView extends ViewGroup {
         EditText editText;
         for (int i = mBox - 1; i >= 0; i--) {
             editText = (EditText) getChildAt(i);
-            if (editText != null && editText.getText().length() == 1) {
+            if (editText != null && editText.getText().length() > 0) {
                 editText.requestFocus();
-                editText.setSelection(0);
                 editText.setText("");
+                editText.setSelection(0);
                 return;
             }
         }
