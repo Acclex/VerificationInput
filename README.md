@@ -79,5 +79,5 @@
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.Acclex:VerificationInput:v0.9.1'
+	        implementation 'com.github.Acclex:VerificationInput:v0.9.2'
 	}
